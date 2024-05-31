@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "gi-node",
+  "version": "1.0.0",
+  "description": "practice utilizing node.js by completing GI challenges",
+  "main": "medium.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^20.14.0"
+  }
+}
