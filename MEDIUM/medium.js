@@ -1,5 +1,5 @@
-import fs from "fs";
-import http from "http";
+const fs = require("fs");
+const http = require("http");
 
 const port = 4000;
 
