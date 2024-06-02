@@ -4,61 +4,71 @@
             "employeeID": "1",
             "name": "Ly My Y",
             "salary": "123456789",
-            "department": "food"
+            "department": "food",
+            "picture": "/ly.png"
         }, 
         {
             "employeeID": "2",
             "name": "Lourdes Villa",
             "salary": "1234567",
-            "department": "books"
+            "department": "books",
+            "picture": "/lourdes.png"
         }, 
         {
             "employeeID": "3",
             "name": "Erica Moua",
             "salary": "1234567",
-            "department": "food"
+            "department": "food",
+            "picture": "/erica.png"
         }, 
         {
             "employeeID": "4",
             "name": "Richard Huynh",
             "salary": "12",
-            "department": "sports"
+            "department": "sports",
+            "picture": "/rich.png"
         }, 
         {
             "employeeID": "5",
             "name": "David Flores-Torres",
             "salary": "123456",
-            "department": "electronics"
+            "department": "electronics",
+            "picture": "/david.png"
         }, 
         {
             "employeeID": "6",
             "name": "JT Sasa",
             "salary": "1234",
-            "department": "sports"
+            "department": "sports",
+            "picture": "/jt.png"
         }, 
         {
             "employeeID": "7",
             "name": "Carlos Peralta",
             "salary": "123456",
-            "department": "electronics"
+            "department": "electronics",
+            "picture": "/carlos.png"
         }, 
         {
             "employeeID": "8",
             "name": "Jordan Sturdivant",
             "salary": "1234567",
-            "department": "food"
+            "department": "food",
+            "picture": "/jordan.png"
         }, 
         {
             "employeeID": "9",
             "name": "Jemima Shakya",
             "salary": "1234567",
-            "department": "books"
+            "department": "books",
+            "picture": "/jemima.png"
         }, 
         {
             "employeeID": "10",
             "name": "Makayla Dennis",
             "salary": "1234567",
-            "department": "sports"
+            "department": "sports",
+            "picture": "/makayla.png"
         }
     ]
 }

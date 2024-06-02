@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 
+app.use(express.static("pics"));
+
 // displays all the employees info
-app.get("/api/employees", (req, res) => {
+app.get("/employees", (req, res) => {
   fs.readFile("./hard.json", "utf8", (err, data) => {
     if (err) throw err;
     res.end(data);
@@ -11,7 +13,7 @@ app.get("/api/employees", (req, res) => {
 });
 
 // displays specific employees info
-app.get("/api/employees/:id", (req, res) => {
+app.get("/employees/:id", (req, res) => {
   fs.readFile("./hard.json", (err, data) => {
     if (err) throw err;
 
@@ -29,7 +31,19 @@ app.get("/api/employees/:id", (req, res) => {
     });
 
     if (exists) {
-      res.send(JSON.stringify(emp)); // if employee exists, display their info only
+      res.send(`
+          <div style="border: 1px solid black;border-radius: 10px;display: flex;width: 600px;gap: 10px;background-color: rgba(134, 171, 235, 0.493);box-shadow: 4px 4px 4px rgb(126, 126, 126);">
+              <div>
+              <img src="${emp["picture"]}" style="border-radius: 20px;width: 300px;padding: 8px; alt="sdfgh">
+              </div>
+              <div>
+              <h2>${emp["name"]}</h2>
+              <h4>Employee ID: ${emp["employeeID"]}</h4>
+              <h4>Department: ${emp["department"]}</h4>
+              <h6>Salary: ${emp["salary"]}</h6>
+              </div>
+          </div>
+    `); // if employee exists, display their info only
     } else {
       res.status(404).send("The employee was not found"); // if not, error will show
     }
